@@ -1,0 +1,28 @@
+<button onclick="alert('Hello')">Klik</button>
+<script>
+    function test() {
+        console.log(a); // Variabel 'a' tidak didefinisikan
+    }
+    test();
+</script>
+```
+
+2. *Event handler error*: Membuat kesalahan dalam event handler.
+```
+<button onclick="undefinedFunction()">Klik</button>
+```
+
+3. *DOM manipulation error*: Membuat kesalahan saat memanipulasi DOM.
+```
+<script>
+    document.getElementById("non-existent-id").innerHTML = "Hello";
+</script>
+```
+
+4. *JavaScript error*: Membuat kesalahan dalam kode JavaScript.
+```
+<script>
+    let x = 5 / 0; // Akan menyebabkan Infinity
+    console.log(x);
+</script>
+```
